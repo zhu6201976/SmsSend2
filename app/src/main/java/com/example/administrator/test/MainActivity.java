@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
         }
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage(phoneNumber, null, content, null, null);
+        Toast.makeText(this, "发送成功!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
